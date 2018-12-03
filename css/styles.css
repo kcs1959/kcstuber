@@ -1,0 +1,222 @@
+body {
+    position: static;
+    margin: 0;
+    font-family: "Sawarabi Gothic";
+}
+
+header {
+    /* position: fixed; */
+    background-color: #40FF3070;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu #logo {
+    flex-grow: 1;
+}
+
+#logo h1 {
+    display: inline-block;
+    margin: 10px 0;
+    font-family: 'Fredoka One';
+    font-size: 2.0em;
+}
+
+#logo h2 {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#menu .nav-link {
+    flex-basis: 120px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nav-link a {
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+#top {
+    margin-top: -72px;
+    height: 55vw;
+    overflow: hidden;
+}
+
+#top_clip {
+    position: absolute;
+    clip: rect(0, auto, auto, 0);
+    height: 56vw;
+    width: 100%;
+}
+
+#top_img {
+    position: fixed;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#top_content {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    font-size: 32px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+#top_content.fade {
+    opacity: 1;
+}
+
+#scroll_top {
+    position: fixed;
+    width: 150px;
+    right: 10px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#scroll_top > img {
+    width: 100%;
+}
+
+#cover {
+    width: 100%;
+}
+
+#cover_blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.5;
+}
+
+#container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.contains {
+    padding-bottom: 15px;
+}
+
+.contains > h1 {
+    text-align: center;
+}
+
+img.icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+
+.live_info {
+    margin-bottom: 45px;
+}
+
+.description > h1 {
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+.description > h2 {
+    font-size: 1.0em;
+    margin-top: 0px;
+}
+
+@media (max-width: 912px) {
+    #logo h2 {
+        display: none;
+    }
+
+    #top {
+        height: 510px;
+    }
+
+    #top_clip {
+        height: 510px;
+    }
+    
+    #top_img {
+        height: 510px;
+        width: auto;
+        margin-left: calc(50vw - 456px);
+    }
+    
+    #cover_blur {
+        height: 510px;
+        width: auto;
+        margin-left: calc(50vw - 456px);
+    }
+
+    #container {
+        max-width: 480px;
+        margin: auto;
+    }
+
+    .live_info img {
+        display: block;
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+        padding: 15px 0;
+    }
+
+    .description {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    .description > h1 {
+        text-align: center;
+    }
+
+    .description > h2 {
+        text-align: center;
+    }    
+}
+
+@media (min-width: 912px) {
+    .live_info img {
+        width: 50%;
+        margin: auto;
+        padding: 15px 0;
+    }
+
+    .description {
+        width: 45%;
+        padding: 0 10px;
+    }
+
+    .live_info:nth-of-type(odd) .description {
+        float: right;
+    }
+    
+    .live_info:nth-of-type(even) .description {
+        float: left;
+    }
+
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
