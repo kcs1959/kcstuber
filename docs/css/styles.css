@@ -9,6 +9,7 @@ header {
     background-color: #40FF3070;
     padding: 5px;
     vertical-align: middle;
+	z-index: 9999;
 }
 
 #menu {
@@ -53,6 +54,7 @@ header {
 
 #top_clip {
     position: absolute;
+    z-index: -2;
     clip: rect(0, auto, auto, 0);
     height: 56vw;
     width: 100%;
