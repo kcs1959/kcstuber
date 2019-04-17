@@ -132,6 +132,24 @@ img.icon {
     margin-bottom: 45px;
 }
 
+.live_info .description h1 a {
+    color: inherit;
+}
+
+.live_info .description h1 a:hover {
+    color: blue;
+}
+
+.live_info .description h1 a::after {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.8em;
+    vertical-align: super;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    content: "\f35d";
+}
+
 .description > h1 {
     font-size: 1.2em;
     margin: 0px;
