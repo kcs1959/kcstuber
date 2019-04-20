@@ -167,7 +167,8 @@ footer {
     padding: 10px 10px;
 }
 
-@media (max-width: 912px) {
+/* Smart Phone */
+@media screen and (max-width: 912px) {
     #logo h2 {
         display: none;
     }
@@ -221,7 +222,8 @@ footer {
     }    
 }
 
-@media (min-width: 912px) {
+/* PC */
+@media screen and (min-width: 912px) {
     .live_info img {
         width: 50%;
         margin: auto;
