@@ -89,8 +89,7 @@ header {
     position: fixed;
     width: 150px;
     height: 150px;
-    right: 10px;
-    /* bottom: 20px; */
+    right: 0px;
     bottom: 0px;
     cursor: pointer;
 }
