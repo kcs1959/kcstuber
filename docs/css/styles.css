@@ -87,8 +87,6 @@ header {
 
 #scroll_top {
     position: fixed;
-    width: 150px;
-    height: 150px;
     right: 0px;
     bottom: 0px;
     cursor: pointer;
@@ -191,6 +189,11 @@ footer {
         width: auto;
         margin-left: calc(50vw - 456px);
     }
+
+    #scroll_top {
+        width: 80px;
+        height: 80px;
+    }
     
     #cover_blur {
         height: 510px;
@@ -229,6 +232,11 @@ footer {
 
 /* PC */
 @media screen and (min-width: 912px) {
+    #scroll_top {
+        width: 150px;
+        height: 150px;
+    }
+
     .live_info img {
         width: 50%;
         margin: auto;
